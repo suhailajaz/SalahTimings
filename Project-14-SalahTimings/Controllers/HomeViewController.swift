@@ -7,10 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     
     var prayers = [[String]]()
     
+    @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var lblLocation: UILabel!
     @IBOutlet var lblQiblaDirection: UILabel!
     @IBOutlet var lblPressure: UILabel!
@@ -29,6 +30,8 @@ class ViewController: UIViewController {
         tblSalah.delegate = self
         tblSalah.dataSource = self
         networkManager.delegate = self
+        searchBar.delegate = self
+        searchBar.showsScopeBar = true
         stylebordersAndCorners()
         fetchData()
     }
@@ -36,7 +39,7 @@ class ViewController: UIViewController {
 
 }
 // MARK: - Custom Functions
-extension ViewController{
+extension HomeViewController{
     func stylebordersAndCorners(){
         tblSalah.layer.cornerRadius = 12
         tblSalah.layer.masksToBounds = true
@@ -46,13 +49,13 @@ extension ViewController{
     }
     func fetchData(){
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-            self?.networkManager.fetchSalahTimings()
+            self?.networkManager.fetchSalahTimings("Srinagar")
         }
     }
 }
 // MARK: - TableviewM Methods
 
-extension ViewController:UITableViewDelegate,UITableViewDataSource{
+extension HomeViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return prayers.count
     }
@@ -68,15 +71,16 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
     
 }
 
-extension ViewController:NetworkManagerDelegate{
+extension HomeViewController:NetworkManagerDelegate{
     func updateUI(timings: SalahModel) {
-        let prayerNames = ["Fajr","Zuhr","Asr","Maghrib","Isha"]
+        
         DispatchQueue.main.async{ [weak self] in
             print("timings: \(timings)")
-            self?.lblLocation.text = timings.city
+            self?.prayers.removeAll()
+            self?.lblLocation.text = timings.query
             self?.lblQiblaDirection.text = timings.qibla_direction
-            self?.lblPressure.text = "\(timings.today_weather.pressure) atm"
-            self?.lblTemp.text = "\(timings.today_weather.temperature) °C"
+            self?.lblPressure.text = "\(timings.today_weather?.pressure ?? "") atm"
+            self?.lblTemp.text = "\(timings.today_weather?.temperature ?? "") °C"
             self?.lblLat.text = "Lat: \(timings.latitude)"
             self?.lblLon.text = "Lon: \(timings.longitude)"
             self?.prayers.append(["Fajr",timings.items[0].fajr])
@@ -101,3 +105,17 @@ extension ViewController:NetworkManagerDelegate{
     
 }
 
+extension HomeViewController: UISearchBarDelegate{
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let text = searchBar.text else{
+            print("No text entered")
+            return
+        }
+        searchBar.text = ""
+        let place = text.replacingOccurrences(of: " ", with: "")
+        
+        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+            self?.networkManager.fetchSalahTimings(place)
+        }
+    }
+}

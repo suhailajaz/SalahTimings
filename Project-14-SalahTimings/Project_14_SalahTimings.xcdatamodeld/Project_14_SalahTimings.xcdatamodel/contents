@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22225" systemVersion="23A344" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="SavedPlacesCD" representedClassName="SavedPlacesCD" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="pressure" optional="YES" attributeType="String"/>
+        <attribute name="qiblaDirection" optional="YES" attributeType="String"/>
+        <attribute name="temp" optional="YES" attributeType="String"/>
+        <relationship name="times" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Time"/>
+    </entity>
+    <entity name="Time" representedClassName="Time" syncable="YES">
+        <attribute name="asr" optional="YES" attributeType="String"/>
+        <attribute name="dhuhr" optional="YES" attributeType="String"/>
+        <attribute name="fajr" optional="YES" attributeType="String"/>
+        <attribute name="isha" optional="YES" attributeType="String"/>
+        <attribute name="maghrib" optional="YES" attributeType="String"/>
+    </entity>
 </model>

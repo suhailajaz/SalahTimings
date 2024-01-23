@@ -19,13 +19,13 @@ struct NetworkManager{
     //init(){}
     var delegate: NetworkManagerDelegate?
     
-    func fetchSalahTimings(){
+    func fetchSalahTimings(_ place: String){
         let headers = [
             "X-RapidAPI-Key": "cd044bcf3emsh33f0a75fd47be40p1b66fbjsnd35495da702a",
             "X-RapidAPI-Host": "muslimsalat.p.rapidapi.com"
         ]
 
-        let url = URL(string: "https://muslimsalat.p.rapidapi.com/kupwara.json")!
+        let url = URL(string: "https://muslimsalat.p.rapidapi.com/\(place).json")!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.allHTTPHeaderFields = headers

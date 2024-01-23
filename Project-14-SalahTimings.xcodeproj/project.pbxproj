@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A27DDAD2B6024880017E56C /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A27DDAC2B6024880017E56C /* DatabaseManager.swift */; };
+		1A27DDBC2B6035070017E56C /* SavedPlacesCD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A27DDBA2B6035070017E56C /* SavedPlacesCD+CoreDataClass.swift */; };
+		1A27DDBD2B6035070017E56C /* SavedPlacesCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A27DDBB2B6035070017E56C /* SavedPlacesCD+CoreDataProperties.swift */; };
+		1A27DDC02B6035280017E56C /* Time+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A27DDBE2B6035280017E56C /* Time+CoreDataClass.swift */; };
+		1A27DDC12B6035280017E56C /* Time+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A27DDBF2B6035280017E56C /* Time+CoreDataProperties.swift */; };
 		1A71ED392B5BF640006A7530 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71ED382B5BF640006A7530 /* AppDelegate.swift */; };
 		1A71ED3B2B5BF640006A7530 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71ED3A2B5BF640006A7530 /* SceneDelegate.swift */; };
-		1A71ED3D2B5BF640006A7530 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71ED3C2B5BF640006A7530 /* ViewController.swift */; };
+		1A71ED3D2B5BF640006A7530 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71ED3C2B5BF640006A7530 /* HomeViewController.swift */; };
 		1A71ED402B5BF640006A7530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A71ED3E2B5BF640006A7530 /* Main.storyboard */; };
 		1A71ED432B5BF640006A7530 /* Project_14_SalahTimings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A71ED412B5BF640006A7530 /* Project_14_SalahTimings.xcdatamodeld */; };
 		1A71ED452B5BF641006A7530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A71ED442B5BF641006A7530 /* Assets.xcassets */; };
@@ -19,13 +24,21 @@
 		1A71ED5C2B5C1BEC006A7530 /* SalahTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A71ED5A2B5C1BEC006A7530 /* SalahTableViewCell.xib */; };
 		1A71ED5E2B5C1CBB006A7530 /* RandomColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71ED5D2B5C1CBB006A7530 /* RandomColorGenerator.swift */; };
 		1A71ED602B5C3501006A7530 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71ED5F2B5C3501006A7530 /* NetworkManager.swift */; };
+		1AA34F842B5D885E00A52723 /* SavedPlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA34F822B5D885E00A52723 /* SavedPlacesTableViewCell.swift */; };
+		1AA34F852B5D885E00A52723 /* SavedPlacesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AA34F832B5D885E00A52723 /* SavedPlacesTableViewCell.xib */; };
+		1AE3732E2B5D92080004A67B /* SavedPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3732D2B5D92080004A67B /* SavedPlacesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A27DDAC2B6024880017E56C /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		1A27DDBA2B6035070017E56C /* SavedPlacesCD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedPlacesCD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A27DDBB2B6035070017E56C /* SavedPlacesCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedPlacesCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1A27DDBE2B6035280017E56C /* Time+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A27DDBF2B6035280017E56C /* Time+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1A71ED352B5BF640006A7530 /* Project-14-SalahTimings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project-14-SalahTimings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A71ED382B5BF640006A7530 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A71ED3A2B5BF640006A7530 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1A71ED3C2B5BF640006A7530 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A71ED3C2B5BF640006A7530 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1A71ED3F2B5BF640006A7530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A71ED422B5BF640006A7530 /* Project_14_SalahTimings.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project_14_SalahTimings.xcdatamodel; sourceTree = "<group>"; };
 		1A71ED442B5BF641006A7530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,6 +49,9 @@
 		1A71ED5A2B5C1BEC006A7530 /* SalahTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalahTableViewCell.xib; sourceTree = "<group>"; };
 		1A71ED5D2B5C1CBB006A7530 /* RandomColorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorGenerator.swift; sourceTree = "<group>"; };
 		1A71ED5F2B5C3501006A7530 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1AA34F822B5D885E00A52723 /* SavedPlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPlacesTableViewCell.swift; sourceTree = "<group>"; };
+		1AA34F832B5D885E00A52723 /* SavedPlacesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedPlacesTableViewCell.xib; sourceTree = "<group>"; };
+		1AE3732D2B5D92080004A67B /* SavedPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPlacesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +109,8 @@
 		1A71ED502B5BFB00006A7530 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1A71ED3C2B5BF640006A7530 /* ViewController.swift */,
+				1A71ED3C2B5BF640006A7530 /* HomeViewController.swift */,
+				1AE3732D2B5D92080004A67B /* SavedPlacesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -103,6 +120,7 @@
 			children = (
 				1A71ED5D2B5C1CBB006A7530 /* RandomColorGenerator.swift */,
 				1A71ED5F2B5C3501006A7530 /* NetworkManager.swift */,
+				1A27DDAC2B6024880017E56C /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -112,6 +130,10 @@
 			children = (
 				1A71ED382B5BF640006A7530 /* AppDelegate.swift */,
 				1A71ED3A2B5BF640006A7530 /* SceneDelegate.swift */,
+				1A27DDBA2B6035070017E56C /* SavedPlacesCD+CoreDataClass.swift */,
+				1A27DDBB2B6035070017E56C /* SavedPlacesCD+CoreDataProperties.swift */,
+				1A27DDBE2B6035280017E56C /* Time+CoreDataClass.swift */,
+				1A27DDBF2B6035280017E56C /* Time+CoreDataProperties.swift */,
 			);
 			path = "Setup Files";
 			sourceTree = "<group>";
@@ -129,6 +151,8 @@
 			children = (
 				1A71ED592B5C1BEC006A7530 /* SalahTableViewCell.swift */,
 				1A71ED5A2B5C1BEC006A7530 /* SalahTableViewCell.xib */,
+				1AA34F822B5D885E00A52723 /* SavedPlacesTableViewCell.swift */,
+				1AA34F832B5D885E00A52723 /* SavedPlacesTableViewCell.xib */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -194,6 +218,7 @@
 				1A71ED482B5BF641006A7530 /* LaunchScreen.storyboard in Resources */,
 				1A71ED452B5BF641006A7530 /* Assets.xcassets in Resources */,
 				1A71ED402B5BF640006A7530 /* Main.storyboard in Resources */,
+				1AA34F852B5D885E00A52723 /* SavedPlacesTableViewCell.xib in Resources */,
 				1A71ED5C2B5C1BEC006A7530 /* SalahTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,13 +230,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A71ED3D2B5BF640006A7530 /* ViewController.swift in Sources */,
+				1A71ED3D2B5BF640006A7530 /* HomeViewController.swift in Sources */,
+				1A27DDAD2B6024880017E56C /* DatabaseManager.swift in Sources */,
 				1A71ED392B5BF640006A7530 /* AppDelegate.swift in Sources */,
+				1A27DDBD2B6035070017E56C /* SavedPlacesCD+CoreDataProperties.swift in Sources */,
+				1AE3732E2B5D92080004A67B /* SavedPlacesViewController.swift in Sources */,
 				1A71ED432B5BF640006A7530 /* Project_14_SalahTimings.xcdatamodeld in Sources */,
 				1A71ED5E2B5C1CBB006A7530 /* RandomColorGenerator.swift in Sources */,
 				1A71ED602B5C3501006A7530 /* NetworkManager.swift in Sources */,
 				1A71ED3B2B5BF640006A7530 /* SceneDelegate.swift in Sources */,
 				1A71ED582B5C0C8F006A7530 /* SalahModel.swift in Sources */,
+				1A27DDC02B6035280017E56C /* Time+CoreDataClass.swift in Sources */,
+				1AA34F842B5D885E00A52723 /* SavedPlacesTableViewCell.swift in Sources */,
+				1A27DDBC2B6035070017E56C /* SavedPlacesCD+CoreDataClass.swift in Sources */,
+				1A27DDC12B6035280017E56C /* Time+CoreDataProperties.swift in Sources */,
 				1A71ED5B2B5C1BEC006A7530 /* SalahTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +404,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,6 +433,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
